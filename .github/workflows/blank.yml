@@ -1,0 +1,12 @@
+name: Primeiro Workflow CI
+on: workflow_dispatch
+jobs:
+  Hello_World:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Printar Hello World
+        run: echo "Hello World"
+      - name: Executar multi comandos
+        run: |
+          echo "Comando numero 1"
+          echo "Comando numero 2"
