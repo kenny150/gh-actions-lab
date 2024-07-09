@@ -3,7 +3,7 @@ on: push
 jobs:
   Checkout:
     runs-on: ubuntu-latest
-    name: Checkout do código
+    name: Checkout do código !!
     steps:
       - uses: actions/checkout@v4 
       - name: Setup Node
