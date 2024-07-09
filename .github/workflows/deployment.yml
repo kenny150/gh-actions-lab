@@ -1,0 +1,14 @@
+name: Prepare and Deployment
+on: push
+jobs:
+  Checkout:
+    runs-on: ubuntu-latest
+    name: Checkout do código
+    steps:
+      - uses: actions/checkout@v4 
+      - name: Setup Node
+        uses: actions/node-setup@v4
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: npm test
